@@ -45,6 +45,30 @@ document.addEventListener('DOMContentLoaded',()=>{
         })
     }
 
+    window.incrementQuantity = function(id){
+        console.log(id);
+        const cartItem = cart.find(item => item.id == id)
+        if(cartItem){
+            cartItem.quantity += 1
+        }
+        render()
+    }
+    window.decrementQuantity = function(id){
+        console.log(id);
+        const cartItem = cart.find(item => item.id == id)
+        if(cartItem && cartItem.quantity > 1){
+            cartItem.quantity -= 1
+        }else{
+            cart = cart.filter(item => item.id != id);
+        }
+        render()
+    }
+    window.removeFromCart = function(id){
+        console.log(id);
+        cart = cart.filter(item => item.id != id);
+        render()
+    }
+
 
     function render(){
         cartItems.innerHTML = ''
@@ -62,5 +86,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             `;
             cartItems.appendChild(cartItem)
         })
+        cartTotal.innerHTML = `Total Items: ${totalItems}, Total Price: ${totalPrice.toFixed(2  )}`
+
     }
 })
