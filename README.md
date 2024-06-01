@@ -20,4 +20,21 @@ The E-Shop application is a simple web-based shopping cart system that allows us
 5. Responsive Design: The layout adjusts for different screen sizes.
 
 ## Technologies Used
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Fetch API
+
+## Installation
+- Please Feel Free to Clone the Repo 👇🏿
+
+`https://github.com/Lawani-EJ/Shopping-Web-Application`
+
+- Next navigate to the project directory
+
+`cd - Shopping-Web-Application`
+
+- Lastly open the `index.html` File.
+
+## Usage
 
