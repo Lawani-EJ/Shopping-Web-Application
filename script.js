@@ -89,4 +89,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         cartTotal.innerHTML = `Total Items: ${totalItems}, Total Price: ${totalPrice.toFixed(2  )}`
 
     }
+
+ 
 })
