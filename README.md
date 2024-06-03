@@ -8,7 +8,6 @@ The E-Shop application is a simple web-based shopping cart system that allows us
 - Technologies Used
 - Installation
 - Usage
-- File Structure
 - Code Explanation
 - Future Enhancements
 
@@ -37,4 +36,25 @@ The E-Shop application is a simple web-based shopping cart system that allows us
 - Lastly open the `index.html` File.
 
 ## Usage
+1. Open the webpage
+2. Browse through the list of products
+3. Click "Add To Cart" to add a product to your shopping cart.
+4. Click the cart button to view your cart.
+5. Use the + and - buttons to adjust the quantity of each item.
+6. Click the "Remove" to remove an item from the cart.
+7. View the total items and total price at the bottom of the cart drawer.
 
+## Code Explanation 
+### HTML (`index.html`)
+- Header: The header contains the site title and a button to open the cart.
+- Main-Section: Displays the list of products.
+- Cart-Drawer: A hidden drawer that shows the cart contents when the cart button is clicked.
+- Overlay: A semi-transparent overlay that appears when the cart drawer is open.
+
+### CSS (`style.css`)
+- Styling: Basic styling for the layout, including the header, buttons, product-list and cart-drawer.
+- Responsive Design: FlexBox is used to ensure the layout is responsive.
+
+### JavaScript (`script.js`)
+- DOMContentLoaded Event: Ensures the script runs after the DOM is fully loaded.
+- Fetching Products:  
